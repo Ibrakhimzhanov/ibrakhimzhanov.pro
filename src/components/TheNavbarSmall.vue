@@ -54,7 +54,7 @@ export default {
         "justify-around",
         "absolute",
         "z-1",
-        "-left-1",
+        "-left-2.5",
         "right-0",
         "top-0",
         "w-screen",

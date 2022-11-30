@@ -22,10 +22,10 @@ export default {
         "duration-100",
         "bg-main-primary",
         "group-hover:bg-white",
-        "w-3",
-        "h-2",
-        "rounded-md",
-        "mr-1",
+        this.isSmall ? "w-6" : "w-3",
+        this.isSmall ? "h-4" : "h-2",
+        this.isSmall ? "rounded-full" : "rounded-md",
+        "mr-2",
       ],
       arrowClasses: [
         this.isSmall ? "hidden" : "flex",
@@ -44,13 +44,14 @@ export default {
   computed: {
     linkClasses() {
       return [
+        // "bg-red-500",
         "flex",
         "items-center",
         "justify-center",
         "relative",
         this.isSmall ? "px-40" : "px-6",
         "py-4",
-        "text-sm",
+        this.isSmall ? "text-lg" : "text-sm",
         "font-inter",
         "group",
         "hover:bg-main-primary",
