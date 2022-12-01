@@ -1,10 +1,16 @@
 <template>
   <section id="works" :class="classes">
-    <WorksPreview
-      v-for="workItem in workItems"
-      :key="workItem.label"
-      :label="workItem.label"
-    />
+    <div class="work flex w-full h-[133px] bg-white overflow-hidden">
+      <div
+        class="boxes flex space-x-20 pl-[100%] items-center whitespace-nowrap md:text-2xl md:px-16"
+      >
+        <WorksPreview
+          v-for="workItem in workItems"
+          :key="workItem.label"
+          :label="workItem.label"
+        />
+      </div>
+    </div>
     <WorksPreviewVideo />
   </section>
 </template>

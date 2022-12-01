@@ -51,10 +51,10 @@ export default {
   computed: {
     classes() {
       const buttonMain = [
-        "py-5",
+        "py-4",
         "px-4",
         "sm:px-7",
-        "text-[14px]",
+        "text-xs",
         "sm:text-[16px]",
         "text-main-primary",
         "font-drimmer",

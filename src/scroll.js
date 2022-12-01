@@ -9,13 +9,6 @@ let sections = gsap.utils.toArray(".panel");
 let container = document.querySelector(".wrap");
 let customContainer = document.querySelector(".customContainer");
 mm.add("(min-width: 1024px)", () => {
-  gsap.to(".boxes", {
-    duration: 5,
-    ease: "none",
-    x: -ww,
-    repeat: -1,
-  });
-  console.log(">>>>>One<<<<<");
   gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
@@ -46,4 +39,9 @@ mm.add("(min-width: 1024px)", () => {
     },
   });
 });
-//! Two
+gsap.to(".boxes", {
+  duration: 15,
+  ease: "none",
+  x: "-100%",
+  repeat: -1,
+});

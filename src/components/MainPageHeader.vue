@@ -26,7 +26,7 @@ export default {
       classes: [
         "uppercase",
         "text-transparent",
-        "text-[25px]",
+        "text-2xl",
         "text-center",
         "xl:text-[40px]",
         "sm:text-[30px]",

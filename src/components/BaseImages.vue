@@ -9,12 +9,11 @@ export default {
   data() {
     return {
       classes: [
+        "w-3/4",
         "h-full",
         "border",
-        "bg-red-500",
         "border-transparent",
         "border-l-white",
-        "w-3/4",
         "flex",
         "items-center",
         "justify-center",
