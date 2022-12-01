@@ -11,7 +11,9 @@
         />
       </div>
     </div>
-    <WorksPreviewVideo />
+    <div class="flex items-center bg-orange-400 justify-center w-full h-full">
+      <WorksPreviewVideo />
+    </div>
   </section>
 </template>
 <script>
@@ -37,13 +39,12 @@ export default {
       ],
       classes: [
         "panel",
-        "lg:h-screen",
+        "h-screen",
         "w-screen",
         "flex",
         "flex-col",
         "items-center",
-        "lg:pt-[86px]",
-        "pt-0",
+        "pt-[86px]",
       ],
     };
   },
