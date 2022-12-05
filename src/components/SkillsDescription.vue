@@ -1,16 +1,22 @@
 <template>
   <section class="lg:h-screen">
     <div :class="classes">
+      <div
+        class="bg-white lg:flex hidden opacity-50 absolute right-[45%] h-full w-1"
+      ></div>
       <div :class="classesDescription">
         <span :class="classesSpan"> {{ slideNumber }} </span>
-        <h5 class="font-drimmerExtraBold text-[35px]">{{ title }}</h5>
+
+        <h5 class="font-drimmerExtraBold lg:text-4xl text-2xl">{{ title }}</h5>
         <p
-          class="font-inter text-sm lg:text-[20px] text-justify w-4/5 lg:w-[497px]"
+          class="font-inter text-xs lg:text-xl text-justify xl:w-[497px] sm:w-3/4"
         >
           {{ description }}
         </p>
       </div>
-      <BaseImages :name="`${title}.svg`" class="lg:flex hidden" />
+      <div class="flex items-center justify-center w-full">
+        <BaseImages :name="`${title}.svg`" class="w-[196px] lg:w-full" />
+      </div>
     </div>
   </section>
 </template>
@@ -28,35 +34,38 @@ export default {
   data() {
     return {
       classes: [
+        // "bg-red-500",
         "flex",
-        "items-center",
+        "lg:flex-row",
+        "space-y-10",
+        "lg:space-y-0",
+        "flex-col",
+        "sm:items-center",
+        "items-start",
         "lg:justify-around",
-        "justify-between",
-        "container",
         "text-white",
         "h-full",
-        "py-20",
-        "lg:px-5",
+        "py-10",
         "lg:py-0",
+        "lg:px-20",
+        "px-5",
       ],
       classesDescription: [
+        // "bg-blue-600",
         "flex",
         "flex-col",
-        "justify-center",
-        "items-center",
-        "lg:items-start",
+        "sm:items-center",
         "relative",
-        "lg:w-2/4",
-        "space-y-4",
+        "space-y-6",
       ],
       classesSpan: [
+        // "bg-green-600",
         "text-main-secondary",
-        "text-[16px]",
-        "lg:flex",
-        "hidden",
+        "xl:text-[16px]",
+        "flex",
         "tracking-[1.5px]",
         "absolute",
-        "left-0",
+        "sm:left-[10%]",
         "-top-10",
         "py-2",
         "after:border",

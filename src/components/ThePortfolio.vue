@@ -1,9 +1,8 @@
 <template>
   <section class="trigger">
     <div
-      class="customContainer flex items-start lg:flex-row flex-col flex-nowrap w-[460%] bg-[#FFCE1F]"
+      class="customContainer flex items-start lg:flex-row flex-col flex-nowrap w-[500%] bg-[#FFCE1F]"
     >
-      <PortfolioItemsHeader :label="portfolioItems[0].label" />
       <PortfolioItems
         v-for="portfolioItem in portfolioItems.slice(0, 3)"
         :key="portfolioItem.label"
@@ -16,11 +15,9 @@
 </template>
 
 <script>
-import PortfolioItemsHeader from "./PortfolioItemsHeader.vue";
 import PortfolioItems from "./PortfolioItems.vue";
 export default {
   components: {
-    PortfolioItemsHeader,
     PortfolioItems,
   },
   data() {

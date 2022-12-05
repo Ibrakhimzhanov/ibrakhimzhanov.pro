@@ -1,8 +1,10 @@
 <template>
   <section id="works" :class="classes">
-    <div class="work flex w-full h-[133px] bg-white overflow-hidden">
+    <div
+      class="work flex w-full items-center h-[133px] bg-white overflow-hidden"
+    >
       <div
-        class="boxes flex space-x-20 pl-[100%] items-center whitespace-nowrap md:text-2xl md:px-16"
+        class="boxes flex space-x-20 pl-[100%] items-center whitespace-nowrap md:text-2xl"
       >
         <WorksPreview
           v-for="workItem in workItems"
@@ -11,7 +13,7 @@
         />
       </div>
     </div>
-    <div class="flex items-center bg-orange-400 justify-center w-full h-full">
+    <div class="flex items-center justify-center w-full h-full">
       <WorksPreviewVideo />
     </div>
   </section>
@@ -38,6 +40,7 @@ export default {
         },
       ],
       classes: [
+        // "bg-yellow-500",
         "panel",
         "h-screen",
         "w-screen",

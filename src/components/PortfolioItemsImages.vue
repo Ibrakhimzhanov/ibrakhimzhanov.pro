@@ -1,17 +1,13 @@
-<!-- <template>
-  <div
-    class="h-screen w-3/4 pt-[84px] bg-orange-500 items-center px-5 flex justify-center"
-  >
-    <div
-      class="xl:w-5/5 xl:h-3/4 bg-cover border-8 xl:border-[10px] border-white rounded-[20px]"
-    >
+<template>
+  <div class="items-center lg:px-5 flex justify-center">
+    <div class="lg:border-[10px] lg:border-white lg:rounded-[20px]">
       <BaseImages
-        class="w-4/4 h-full bg-cover rounded-[8px]"
+        class="bg-orange-400 lg:rounded-[8px]"
         :name="`${label}.jpg`"
       />
     </div>
   </div>
-</template> -->
+</template>
 <script>
 import BaseImages from "./BaseImages.vue";
 

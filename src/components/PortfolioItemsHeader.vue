@@ -1,8 +1,8 @@
-<template>
+<!-- <template>
   <div :class="classes">
     {{ label }}
   </div>
-</template>
+</template> -->
 <script>
 export default {
   props: {
@@ -10,19 +10,21 @@ export default {
   },
   data() {
     return {
-      classes: [
+      headerClasses: [
         "flex",
+        "whitespace-nowrap",
         "items-center",
         "justify-center",
-        "sm:text-[130px]",
+        "text-5xl",
+        "py-",
+        "sm:text-9xl",
         "lg:text-[677.95px]",
+        "text-main",
+        "pt-20",
         "lg:h-screen",
-        "lg:pt-20",
         "lg:w-auto",
         "w-screen",
         "font-oswaldM",
-        "text-main",
-        "text-[80px]",
         "uppercase",
       ],
     };

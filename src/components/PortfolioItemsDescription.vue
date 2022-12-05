@@ -1,20 +1,21 @@
 <template>
   <div :class="classes">
-    <span :class="spanClasses">{{ label }} </span>
-    <div class="flex items-start w-2/5 flex-col justify-center">
-      <p class="text-xl mb-11 relative z-10">{{ description }}</p>
+    <div class="space-y-9 mt-10 lg:mt-0 lg:space-y-0">
+      <span :class="spanClasses">{{ label }} </span>
+      <p class="lg:text-xl text-sm relative z-10">{{ description }}</p>
     </div>
-    <div class="flex flex-wrap relative z-100">
+
+    <div
+      class="flex items-center justify-center w-full flex-wrap relative z-100"
+    >
       <BaseButton title="Кейс behance.net" :link="label" />
 
       <BaseButton title="Открыть сайт" :link="label" is-view-button />
     </div>
-    <div
-      class="h-screen absolute right-0 w-2/4 py-[84px] items-center px-5 flex justify-center"
-    >
-      <div class="bg-cover lg:border-[10px] lg:border-white lg:rounded-[20px]">
+    <div class="items-center lg:px-5 flex justify-center">
+      <div class="lg:border-[10px] lg:border-white lg:rounded-[20px]">
         <BaseImages
-          class="h-full bg-cover rounded-[8px]"
+          class="bg-orange-400 lg:rounded-[8px]"
           :name="`${label}.jpg`"
         />
       </div>
@@ -46,23 +47,28 @@ export default {
         "flex-col",
         "w-screen",
         "h-screen",
-        "py-20",
-        "px-5",
+        "py-10",
+        // "space-y-10",
+        "lg:px-5",
+        "pl-5",
+        "pr-8",
       ],
       spanClasses: [
         "relative",
-        "top-12",
+        "lg:top-12",
+        "top-0",
         "h-screen",
         "z-1",
         "py-2",
         "text-center",
         "text-main",
-        "text-2xl",
+        "lg:text-2xl",
+        "text-xl",
         "uppercase",
         "before:border-dashed",
         "before:border-main",
         "before:absolute ",
-        "before:border",
+        "before:border-b-2",
         "before:w-full",
         "before:top-10",
         "before:left-0",

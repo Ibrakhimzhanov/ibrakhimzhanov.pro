@@ -70,12 +70,14 @@ export default {
       ];
       const portfolioButton = [
         this.isViewButton ? "lg:px-12" : "lg:px-8",
-        "py-5",
+        "lg:py-5",
+        "py-3",
         "px-5",
         "mr-4",
         "uppercase",
         "text-main",
-        "text-md",
+        "lg:text-lg",
+        "text-xs",
         "border",
         "border-main",
         "rounded-full",
