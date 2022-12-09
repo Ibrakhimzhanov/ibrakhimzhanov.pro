@@ -1,33 +1,38 @@
 <template>
-  <section id="about" class="panel w-screen lg:h-screen lg:pt-[87px]">
+  <section
+    id="about"
+    class="panel w-screen lg:h-screen flex items-center lg:pt-[87px] lg:px-5"
+  >
     <div
-      class="text-white bg-orange-700 px-5 lg:py-20 lg:h-full w-full font-inter flex flex-col items-center"
+      class="text-white font-inter pl-2 pr-6 w-full flex flex-col items-center justify-around space-y-20 xl:space-y-32"
     >
-      <div
-        class="flex lg:flex-row flex-col w-full h-full sm:items-center space-y-10 justify-around lg:pl-6 lg:pr-10"
-      >
-        <div class="lg:w-[405px] sm:w-4/6">
-          <BaseImages name="me.png" class="w-full rounded-none lg:rounded-md" />
+      <div class="w-full xl:flex lg:flex-row flex-col">
+        <div class="flex w-full items-center justify-center">
+          <BaseImages name="me.png" class="rounded-xl" />
         </div>
-        <h2
-          class="uppercase lg:hidden flex font-drimmerExtraBold text-2xl xl:text-4xl leading-[46px]"
-        >
-          // Islam Ibragimjanov
-        </h2>
-        <TheAboutDescription />
+        <div class="flex xl:flex-row flex-col items-center justify-between">
+          <div class="relative flex justify-center lg:px-5">
+            <span :class="spanClasses">О себе</span>
+            <p
+              class="flex text-lg xl:text-[20px] xl:leading-8 xl:w-[652px] text-justify mt-14 lg:mt-10"
+            >
+              {{ description }}
+            </p>
+          </div>
+        </div>
       </div>
 
-      <!-- Large FIO (sm = hidden) -->
-      <div class="flex w-5/6 lg:justify-around">
-        <h2
-          class="uppercase lg:flex hidden font-drimmerExtraBold text-2xl lg:text-4xl leading-[46px]"
+      <div class="xl:px-[240px] w-3/4 lg:flex hidden justify-center relative">
+        <div
+          class="flex uppercase font-drimmerExtraBold text-2xl xl:text-4xl leading-[46px]"
         >
-          // Islam
-          <br />
-          Ibragimjanov
-        </h2>
-
-        <a href="#ww" class="h-full lg:flex hidden items-center">
+          <h2>
+            // Islam
+            <br />
+            Ibragimjanov
+          </h2>
+        </div>
+        <a href="#ww" class="absolute right-0 h-full flex items-center">
           <BaseIcon name="right" class="w-[66px] h-[50px] text-white" />
         </a>
       </div>
@@ -37,15 +42,34 @@
 <script>
 import BaseIcon from "./BaseIcon.vue";
 import BaseImages from "./BaseImages.vue";
-import TheAboutDescription from "./TheAboutDescription.vue";
+
 export default {
   components: {
     BaseIcon,
     BaseImages,
-    TheAboutDescription,
   },
   data() {
-    return {};
+    return {
+      spanClasses: [
+        "text-main-secondary",
+        "tracking-[2px]",
+        "xl:flex",
+        "hidden",
+        "absolute",
+        "left-2/4",
+        "xl:-left-[5.49rem]",
+        "py-2",
+        "after:border-dashed",
+        "after:border",
+        "after:border-main-secondary",
+        "after:absolute",
+        "after:w-full",
+        "after:-bottom-0",
+        "after:left-0",
+      ],
+      description:
+        "Я веб-разработчик и дизайнер, который занимается созданием веб-сайтов с 2016 года. Я специализируюсь на доступности, производительности и удобстве использования, не жертвуя творческим потенциалом. Вероятно, я не типичный разработчик, работающий с Node.JS, PHPH или С#  и настраивающий докеры, но я проектирую, погружаясь в суть задачи, настраивая  от размера шрифтов и обдумывая макеты, в это время вы можете видеть меня таким(~_^). Я стремлюсь создавать масштабируемый код, пишу код так, чтобы после меня коллеги не говорили: и как мне это разгребать?🤦. А наоборот говорили:  О как все понятно написано👌, чой обкэ, ща решим. Опираясь при этом только на нужные инструменты.",
+    };
   },
 };
 </script>

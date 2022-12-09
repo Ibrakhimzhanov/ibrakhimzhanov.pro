@@ -28,16 +28,15 @@ export default {
     return {
       headerClasses: [
         "wrap",
-        "h-full",
-        "w-full",
-        "xl:w-[400%]",
-        "lg:w-[406.6%]",
         "flex",
         "flex-col",
+        "w-full",
         "lg:flex-row",
+        "justify-center ",
         "lg:flex-nowrap",
-        "items-center",
-        "justify-center",
+        "h-full",
+        "xl:w-[400%]",
+        "lg:w-[403%]",
       ],
     };
   },
