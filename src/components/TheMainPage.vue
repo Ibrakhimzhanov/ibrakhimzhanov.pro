@@ -16,21 +16,21 @@ export default {
   data() {
     return {
       classes: [
+        // "bg-orange-500",
         "panel",
         "flex",
         "items-center",
         "justify-center",
         "flex-col",
-        "h-screen",
+        "lg:h-screen",
         "w-screen",
         "text-center",
         "sm:space-y-5",
-        "space-y-14",
-        "sm:px-6",
+        "sm:px-20",
         "px-10",
         "pt-20",
         "pb-14",
-        "sm:py-0",
+        "sm:py-40",
       ],
     };
   },

@@ -42,12 +42,16 @@ export default {
       classes: [
         // "bg-yellow-500",
         "panel",
-        "h-screen",
+        "lg:h-screen",
+        "lg:pt-[86px]",
+        "lg:pb-0",
         "w-screen",
         "flex",
         "flex-col",
         "items-center",
-        "pt-[86px]",
+        "py-10",
+        "space-y-10",
+        "lg:space-y-0",
       ],
     };
   },

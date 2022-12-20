@@ -1,18 +1,20 @@
 <template>
   <div
     id="panel-3"
-    class="flex items-center flex-col lg:flex-row bg-[#FFCE1F] justify-center py-10 xl:h-screen relative"
+    class="items-center justify-center h-full flex flex-col lg:flex-row bg-[#FFCE1F] py-10 xl:h-screen relative"
   >
     <div :class="headerClasses">
       {{ label }}
     </div>
     <div :class="classes">
       <div
-        class="flex flex-col justify-around lg:justify-around h-full lg:py-20 lg:w-4/5 xl:w-3/5"
+        class="flex flex-col lg:justify-around lg:h-full lg:py-20 lg:w-4/6 xl:w-3/6 space-y-10 lg:space-y-0"
       >
         <div class="space-y-9 mt-10 lg:mt-0">
           <span :class="spanClasses">About the project </span>
-          <p class="lg:text-xl text-sm relative z-10">{{ description }}</p>
+          <p class="lg:text-xl sm:text-xl text-sm sm:px-10 relative z-10">
+            {{ description }}
+          </p>
         </div>
 
         <div
@@ -26,7 +28,7 @@
 
       <div class="lg:px-5 lg:w-3/5">
         <div class="xl:border-[10px] xl:border-white xl:rounded-[20px]">
-          <BaseImages class="xl:rounded-[8px]" :name="`${label}.jpg`" />
+          <BaseImages class="lg:rounded-[8px]" :name="`${label}.jpg`" />
         </div>
       </div>
     </div>
@@ -57,7 +59,7 @@ export default {
         "whitespace-nowrap",
         "items-center",
         "justify-center",
-        "text-5xl",
+        "text-7xl",
         "lg:text-[677.95px]",
         "text-main",
         "lg:h-screen",
@@ -71,22 +73,23 @@ export default {
         "flex",
         "flex-col",
         "lg:flex-row",
+        "lg:items-center",
+        "lg:px-5",
+        "lg:ml-10",
         "justify-around",
         "items-start",
-        "lg:items-center",
         "font-inter",
         "w-screen",
-        "h-screen",
-        "lg:ml-10",
+        "lg:h-screen",
+        "space-y-20",
         "ml-0",
-        "lg:pt-[87px]",
-        "lg:px-5",
         "pl-5",
         "pr-8",
       ],
       spanClasses: [
         "relative",
         "top-0",
+        "sm:left-10",
         "h-screen",
         "z-1",
         "py-2",

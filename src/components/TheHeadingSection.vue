@@ -4,7 +4,7 @@
     class="panel flex flex-col items-center justify-center relative w-screen lg:h-screen px-[70px] py-[87px] lg:px-0 lg:mt-0 mt-10"
   >
     <h1
-      class="xl:text-[130px] whitespace-nowrap lg:text-[80px] text-4xl font-drimmerExtraBold text-white"
+      class="xl:text-9xl whitespace-nowrap lg:text-8xl sm:text-5xl text-4xl font-drimmerExtraBold text-white"
     >
       my skills
     </h1>

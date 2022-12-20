@@ -1,21 +1,22 @@
 <template>
-  <section class="lg:h-screen">
+  <section class="xl:h-screen lg:py-32">
     <div :class="classes">
-      <div
-        class="bg-white lg:flex hidden opacity-50 absolute right-[45%] h-full w-1"
-      ></div>
       <div :class="classesDescription">
         <span :class="classesSpan"> {{ slideNumber }} </span>
 
-        <h5 class="font-drimmerExtraBold lg:text-4xl text-2xl">{{ title }}</h5>
+        <h5 class="font-drimmerExtraBold lg:text-4xl sm:text-3xl text-2xl">
+          {{ title }}
+        </h5>
         <p
-          class="font-inter text-xs lg:text-xl text-justify xl:w-[497px] sm:w-3/4"
+          class="font-inter sm:text-lg text-xs lg:text-xl text-justify xl:w-[497px] flex sm:px-10"
         >
           {{ description }}
         </p>
       </div>
-      <div class="flex items-center justify-center w-full">
-        <BaseImages :name="`${title}.svg`" class="w-[196px] lg:w-full" />
+      <div
+        class="flex lg:w-full xl:w-auto justify-center items-center relative top-5 left-2"
+      >
+        <BaseImages :name="`${title}.svg`" class="" />
       </div>
     </div>
   </section>
@@ -37,17 +38,18 @@ export default {
         // "bg-red-500",
         "flex",
         "lg:flex-row",
-        "space-y-10",
         "lg:space-y-0",
-        "flex-col",
-        "sm:items-center",
-        "items-start",
+        "lg:items-start",
         "lg:justify-around",
-        "text-white",
-        "h-full",
-        "py-10",
         "lg:py-0",
-        "lg:px-20",
+        "lg:px-10",
+        "flex-col",
+        "items-center",
+        "text-white",
+        "space-y-10",
+        // "h-full",
+        "w-full",
+        "py-10",
         "px-5",
       ],
       classesDescription: [
@@ -57,16 +59,17 @@ export default {
         "sm:items-center",
         "relative",
         "space-y-6",
+        "py-10",
       ],
       classesSpan: [
         // "bg-green-600",
         "text-main-secondary",
-        "xl:text-[16px]",
         "flex",
         "tracking-[1.5px]",
         "absolute",
-        "sm:left-[10%]",
-        "-top-10",
+        "sm:left-10",
+        "left-0",
+        "top-0",
         "py-2",
         "after:border",
         "after:border-dashed",

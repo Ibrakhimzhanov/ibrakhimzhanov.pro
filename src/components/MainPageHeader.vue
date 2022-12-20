@@ -1,19 +1,24 @@
 <template>
-  <div
-    :class="classes"
-    style="-webkit-text-stroke-width: 0.6px; -webkit-text-stroke-color: #aee2ff"
-  >
-    Hello, i'm
-    <div class="inline-block leading-normal group relative text-main-primary">
-      islam Ibragimjanov
-      <span :class="spanClasses">
-        <MainPageHeaderModal />
-      </span>
+  <div class="flex flex-col items-center space-y-10 mb-10">
+    <div
+      :class="classes"
+      style="
+        -webkit-text-stroke-width: 0.6px;
+        -webkit-text-stroke-color: #aee2ff;
+      "
+    >
+      Hello, i'm
+      <div class="inline-block leading-normal group relative text-main-primary">
+        islam Ibragimjanov
+        <span :class="spanClasses">
+          <MainPageHeaderModal />
+        </span>
+      </div>
+      and Experience about
+      <span class="inline-block text-main-primary"> 8 years </span>
     </div>
-    and Experience about
-    <span class="inline-block text-main-primary"> 8 years </span>
+    <p :class="descriptionClasses">{{ description }}</p>
   </div>
-  <p :class="descriptionClasses">{{ description }}</p>
 </template>
 <script>
 import MainPageHeaderModal from "./MainPageHeaderModal.vue";
@@ -24,6 +29,7 @@ export default {
   data() {
     return {
       classes: [
+        // "bg-red-500",
         "uppercase",
         "text-transparent",
         "text-2xl",

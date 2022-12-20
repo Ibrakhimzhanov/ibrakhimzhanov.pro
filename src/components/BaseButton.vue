@@ -51,8 +51,10 @@ export default {
   computed: {
     classes() {
       const buttonMain = [
-        "py-4",
+        "lg:py-5",
+        "lg:py-5",
         "px-4",
+        "py-4",
         "sm:px-7",
         "text-xs",
         "sm:text-[16px]",
@@ -76,8 +78,9 @@ export default {
         "mr-4",
         "uppercase",
         "text-main",
-        "lg:text-lg",
+        // "lg:text-sm",
         "text-xs",
+        "sm:text-sm",
         "border",
         "border-main",
         "rounded-full",
